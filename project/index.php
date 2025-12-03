@@ -91,20 +91,39 @@ switch ($page) {
     // 4. SESSIONS (JADWAL) - RELASI
     case 'sessions':
         $sessionViewModel = new SessionViewModel();
-        
+        $memberVM = new MemberViewModel();
+        $trainerVM = new TrainerViewModel();
+
         if ($action == 'create') {
-            // Kita butuh data Member dan Trainer untuk Dropdown
-            $memberVM = new MemberViewModel();
-            $trainerVM = new TrainerViewModel();
-            
+            // Ambil data untuk dropdown
             $membersList = $memberVM->fetchAll();
             $trainersList = $trainerVM->fetchAll();
-            
             include 'views/session_form.php';
+
+        } elseif ($action == 'edit') { 
+            // LOGIC BARU: Ambil data sesi yg mau diedit
+            $session = $sessionViewModel->fetchById($_GET['id']);
+            // Ambil data untuk dropdown juga
+            $membersList = $memberVM->fetchAll();
+            $trainersList = $trainerVM->fetchAll();
+            include 'views/session_form.php';
+
         } elseif ($action == 'store') {
-            $sessionViewModel->create($_POST);
+            // LOGIC BARU: Cek Insert atau Update?
+            if (!empty($_POST['id'])) {
+                $sessionViewModel->update($_POST);
+            } else {
+                $sessionViewModel->create($_POST);
+            }
             header("Location: index.php?page=sessions");
+
+        } elseif ($action == 'delete') {
+            // LOGIC BARU: Hapus
+            $sessionViewModel->delete($_GET['id']);
+            header("Location: index.php?page=sessions");
+
         } else {
+            // Default: List
             $sessions = $sessionViewModel->fetchAll();
             include 'views/session_list.php';
         }
@@ -114,5 +133,6 @@ switch ($page) {
         echo "<h2>404 - Halaman tidak ditemukan</h2>";
 }
 
+echo "</div>";
 echo "</body></html>";
 ?>                      
