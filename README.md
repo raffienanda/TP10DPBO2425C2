@@ -1,7 +1,7 @@
 # TP10DPBO2425C2
 
 # Janji
-Saya Raffie Arsy Ananda dengan NIM 2405916 mengerjakan Tugas Praktikum 3 dalam mata kuliah Desain Pemrograman Berbasis Objek untuk keberkahanNya maka saya tidak melakukan pengaturan seperti yang telah dispesifikasikan. Aamiin.
+Saya Raffie Arsy Ananda dengan NIM 2405916 mengerjakan Tugas Praktikum 10 dalam mata kuliah Desain Pemrograman Berbasis Objek untuk keberkahanNya maka saya tidak melakukan pengaturan seperti yang telah dispesifikasikan. Aamiin.
 
 ---
 
