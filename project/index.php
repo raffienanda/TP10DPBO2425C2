@@ -1,4 +1,6 @@
 <?php
+ob_start();
+
 // --- LOAD SEMUA VIEWMODELS ---
 include_once 'viewmodels/MemberViewModel.php';
 include_once 'viewmodels/TrainerViewModel.php';
@@ -135,4 +137,6 @@ switch ($page) {
 
 echo "</div>";
 echo "</body></html>";
+
+ob_end_flush();
 ?>                      
