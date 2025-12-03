@@ -1,5 +1,10 @@
 # TP10DPBO2425C2
 
+# Janji
+Saya Raffie Arsy Ananda dengan NIM 2405916 mengerjakan Tugas Praktikum 3 dalam mata kuliah Desain Pemrograman Berbasis Objek untuk keberkahanNya maka saya tidak melakukan pengaturan seperti yang telah dispesifikasikan. Aamiin.
+
+---
+
 # 🏋️ Gym Management System
 
 Proyek ini merupakan implementasi sederhana dari sistem manajemen Gym menggunakan **PHP Native** dengan arsitektur **MVVM (Model-View-ViewModel)**.  
