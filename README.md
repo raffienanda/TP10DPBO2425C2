@@ -52,7 +52,13 @@ Aplikasi berjalan di web browser dan memiliki fitur CRUD lengkap serta relasi an
 ---
 
 ## 🖼️ Tampilan
+<img width="1500" height="750" alt="image" src="https://github.com/user-attachments/assets/03309d2b-4f2c-4614-b982-f6c2c90985e9" />
+<img width="1500" height="750" alt="image" src="https://github.com/user-attachments/assets/39432c3f-033b-4c2f-b22d-036f829cf996" />
+<img width="1500" height="750" alt="image" src="https://github.com/user-attachments/assets/13cc4114-0390-4bc8-829b-8913b9c8d800" />
+<img width="1500" height="750" alt="image" src="https://github.com/user-attachments/assets/d9ab276b-b159-4b37-8b44-02d76c31b68d" />
+<img width="1500" height="750" alt="image" src="https://github.com/user-attachments/assets/b2a151e7-f8dc-4bee-9e52-af34201917ce" />
+<img width="1500" height="750" alt="image" src="https://github.com/user-attachments/assets/1c1ba39f-53dd-44cb-b9e0-79b0204e2835" />
 
-*(Tempat screenshot aplikasi, opsional)*
 
----
+
+
