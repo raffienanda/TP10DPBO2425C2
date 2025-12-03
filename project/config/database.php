@@ -1,16 +1,20 @@
 <?php
 class Database {
-    private static $instance = null;
-    private $conn;
+    private $host = "localhost";
+    private $db_name = "gym_db";
+    private $username = "root"; // Sesuaikan dengan user db kamu
+    private $password = "";     // Sesuaikan dengan pass db kamu
+    public $conn;
 
-    private function __construct() {
-        $this->conn = new mysqli("localhost", "root", "", "db_olahraga");
-        if ($this->conn->connect_error) die("Connection failed: " . $this->conn->connect_error);
-    }
-
-    public static function getInstance() {
-        if (!self::$instance) self::$instance = new Database();
-        return self::$instance->conn;
+    public function getConnection() {
+        $this->conn = null;
+        try {
+            $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
+            $this->conn->exec("set names utf8");
+        } catch(PDOException $exception) {
+            echo "Connection error: " . $exception->getMessage();
+        }
+        return $this->conn;
     }
 }
 ?>
